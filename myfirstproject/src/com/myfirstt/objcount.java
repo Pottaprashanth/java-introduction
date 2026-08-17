@@ -1,9 +1,9 @@
 package com.myfirstt;
 
-public class objcount {
-     static int c=0;
-	objcount( ){
-		System.out.println("hi");
+ class objcount {
+      static int c=0;
+	 {
+		
 		 c++;
 	}
 	public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class objcount {
 		objcount ob2=new objcount();
 		objcount ob3=new objcount();
 		objcount ob4=new objcount();
-		System.out.println(c);
+		System.out.println(c );
 	
 	}
 
