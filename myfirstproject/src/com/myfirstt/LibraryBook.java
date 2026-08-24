@@ -8,6 +8,7 @@ public class LibraryBook {
 	static String libraryName;
 	String librarianName;
 
+
 	public void displayBookDetails() {
 		System.out.println("********** BooK Details *********");
 		System.out.println("Book ID :" + bookID);
@@ -19,7 +20,13 @@ public class LibraryBook {
 
 		System.out.println();
 	}
-
+	
+	 void issueBook()
+	{
+		 availableCopies--;
+	
+		
+	}
 	public void displayLibraryDetails() {
 		System.out.println("********** Library Details **********");
 		System.out.println("librarianName :" + librarianName);
@@ -39,9 +46,12 @@ public class LibraryBook {
 		b1.availableCopies = 5;
 		libraryName = "vcube";
 		b1.librarianName = "hari";
-
+		
 		b1.displayBookDetails();
 		b1.changeLibrarian();
+		
+		b1.issueBook();
+		b1.issueBook();
 		b1.displayBookDetails();
 
 		LibraryBook b2 = new LibraryBook();
@@ -50,16 +60,19 @@ public class LibraryBook {
 		b2.authorName = "Sanjay";
 		b2.availableCopies = 10;
 		b2.librarianName = "hari";
-
+	
 		b2.displayBookDetails();
 		b2.changeLibrarian();
 		b2.displayBookDetails();
+		b2.issueBook();
 
 		LibraryBook b3 = new LibraryBook();
 		b3.librarianName = "hari";
-		b3.displayLibraryDetails();
+		b3.issueBook();
 		b3.changeLibrarian();
 		b3.displayLibraryDetails();
+		
+		
 
 	}
 }
