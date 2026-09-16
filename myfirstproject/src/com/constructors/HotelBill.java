@@ -1,4 +1,4 @@
-package constructors;
+package com.constructors;
 
 import java.util.Scanner;
 
