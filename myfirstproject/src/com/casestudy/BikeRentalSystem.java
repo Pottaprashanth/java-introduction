@@ -27,7 +27,7 @@ public class BikeRentalSystem {
 					charge = charge - discount;
 
 				}
-				customerBill = customerBill + charge;
+				customerBill = customerBill + charge; 
 				System.out.println("Bike " + bike + " charge: " + charge);
 				bike++;
 			}
